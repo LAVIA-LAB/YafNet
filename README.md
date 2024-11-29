@@ -16,7 +16,7 @@ are used to perform the final classification based on the features extracted by 
 ### **1.3 Compile and Train the Model:**
 In this step, we use an optimizer like Adam, which adapts the learning rate during training to speed up convergence and improve performance. The batch size, which is the number of samples that will be processed before updating the model's internal parameters, and the number of epochs, which is the number of complete passes through the training dataset, are
 defined in this step. By these steps, we can build an effective CNN for identifying different scripts in images, ensuring high accuracy and robust performance.
-![YafNet Model.]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/file/d/1u2_RgT_1Xp-TvkiWH5cvDYzpaULdDSWV/view?usp=drive_link))
+![YafNet Model.](https://drive.google.com/file/d/1u2_RgT_1Xp-TvkiWH5cvDYzpaULdDSWV)
 ## **2- Dataset**
 In this paper, we evaluated our method using the SIW 2021 Competition dataset [https://www.dropbox.com/scl/fi/val6l6sfrfpqeptmnrnv4/Multiscript_SIW_Database_Feb25_acceptedPaper.zip?rlkey=zbmf4bmvifn1q3ot7tp2jg0pe&e=1&dl=0] for script identification. This dataset includes a large number of words extracted from text images of both handwritten and printed documents. The dataset consists of word images from 13 different scripts: Arabic, Bengali, Gujarati, Gurmukhi, Devanagari, Japanese, Kannada, Malayalam, Oriya, Roman, Tamil, Telugu, and Thai.
 ## **3- Experiments**
