@@ -24,8 +24,13 @@ For data augmentation, we applied various transformations to the text images, in
 For external data, we extracted a word-level dataset from PHDIndic_11 and BN-HTRd . The dataset includes eight classes: Bangla (6,331 words), Oriya (4,993 words), Roman (2,200 words), Gurmukhi (914 words), Telegu (525 words), Devanagari (481 words), Tamil (361 words), and Kannada (272 words). For the Gurmukhi printed script, we additionally made a dataset of 4,037 words from internet documents. These datasets have been added to the training set.
 Table 5 shows YafNet's performance across various tasks—handwritten, printed, and mixed scripts—with data augmentation (DA) and external datasets (ED). YafNet with both DA and ED achieves strong baseline performance in all tasks, with 96.03% for handwritten, 99.52% for printed, and 97.73% for mixed scripts  
 
-Proposed method	                           Metric	             Task 1 (Handwritten)	  Task 2 (Printed)    	Task 3 (Mixed)
-YafNet using DA and ED	                   CCA	                96.03%	               99.52%	               97.73%
-	                                         F1 Score	            96.33%	               99.53%	               97.73%
-	                                         BA	                  92.85%	               99.69%	               97.93%
-	                                         ROC AUC Score	      99.65%	               99.99%	               99.97%
+|Proposed method............|  Metric..................|Task 1 (Handw)|Task 2 (Pinted)|Task 3 (Mixed).|
+-------------------------------------------------------------------------------------------------------------------------------
+|YafNet using DA and ED.| CCA.......................|96.03%..............|99.52%...........|97.73%.........|
+-------------------------------------------------------------------------------------------------------------------------------
+|YafNet using DA and ED.| F1 Score...............|96.33%...............|99.53%...........|97.73%.........|
+-------------------------------------------------------------------------------------------------------------------------------
+|YafNet using DA and ED.| BA.........................|92.85%...............|99.69%...........|97.93%.........|
+-------------------------------------------------------------------------------------------------------------------------------
+|YafNet using DA and ED.| ROC AUC Score.|99.65%...............|99.99%...........|99.97%.........|
+-------------------------------------------------------------------------------------------------------------------------------
