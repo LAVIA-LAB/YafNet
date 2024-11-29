@@ -16,5 +16,16 @@ are used to perform the final classification based on the features extracted by 
 ### **1.3 Compile and Train the Model:**
 In this step, we use an optimizer like Adam, which adapts the learning rate during training to speed up convergence and improve performance. The batch size, which is the number of samples that will be processed before updating the model's internal parameters, and the number of epochs, which is the number of complete passes through the training dataset, are
 defined in this step. By these steps, we can build an effective CNN for identifying different scripts in images, ensuring high accuracy and robust performance.
-## **1- 3.1 Dataset**
+## **2- Dataset**
 In this paper, we evaluated our method using the SIW 2021 Competition dataset [https://www.dropbox.com/scl/fi/val6l6sfrfpqeptmnrnv4/Multiscript_SIW_Database_Feb25_acceptedPaper.zip?rlkey=zbmf4bmvifn1q3ot7tp2jg0pe&e=1&dl=0] for script identification. This dataset includes a large number of words extracted from text images of both handwritten and printed documents. The dataset consists of word images from 13 different scripts: Arabic, Bengali, Gujarati, Gurmukhi, Devanagari, Japanese, Kannada, Malayalam, Oriya, Roman, Tamil, Telugu, and Thai.
+## **3- Experiments**
+For YafNet, we adopted the Adam optimizer with a learning rate of 0.001 and trained it for 100 epochs with a batch size of 32. To examine the effect of input image size on our model, we evaluated the same model at size: 112x112 pixels. 
+For data augmentation, we applied various transformations to the text images, including rotation, shear, and zoom.
+For external data, we extracted a word-level dataset from PHDIndic_11 and BN-HTRd . The dataset includes eight classes: Bangla (6,331 words), Oriya (4,993 words), Roman (2,200 words), Gurmukhi (914 words), Telegu (525 words), Devanagari (481 words), Tamil (361 words), and Kannada (272 words). For the Gurmukhi printed script, we additionally made a dataset of 4,037 words from internet documents. These datasets have been added to the training set.
+Table 5 shows YafNet's performance across various tasks—handwritten, printed, and mixed scripts—with data augmentation (DA) and external datasets (ED). YafNet with both DA and ED achieves strong baseline performance in all tasks, with 96.03% for handwritten, 99.52% for printed, and 97.73% for mixed scripts  
+
+Proposed method	                           Metric	             Task 1 (Handwritten)	  Task 2 (Printed)    	Task 3 (Mixed)
+YafNet using DA and ED	                   CCA	                96.03%	               99.52%	               97.73%
+	                                         F1 Score	            96.33%	               99.53%	               97.73%
+	                                         BA	                  92.85%	               99.69%	               97.93%
+	                                         ROC AUC Score	      99.65%	               99.99%	               99.97%
