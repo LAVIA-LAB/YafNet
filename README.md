@@ -2,6 +2,7 @@
 Efficient Multi-Script Identification using Deep CNN
 
 The major contributions of developing a CNN from scratch for script identification include end-to-end training tailored to the task, ensuring feature extraction directly from the input data without external aids. This approach highlights the model's ability to handle class imbalance and provides a robust baseline without relying on pretrained models, ensemble methods, or post-processing. Additionally, it showcases the adaptability and scalability of a purely data-driven CNN architecture for future research and applications.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14246711.svg)](https://doi.org/10.5281/zenodo.14246711)
 
 ## **1- Methodology**
 
